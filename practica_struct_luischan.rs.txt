@@ -1,0 +1,36 @@
+//Luis Eduardo Chan Portillo
+
+struct Persona {
+    nombre: String,
+    edad: u8,
+    altura: f32,
+    sexo: String,
+    ciudad: String,
+    cumpleaños: String,
+}
+
+
+impl Persona {
+    fn mostrar(&self) {
+        println!("El nombre es: {}", self.nombre);
+        println!("La edad es: {}", self.edad);
+        println!("La altura es: {} m", self.altura);
+        println!("El sexo es: {}", self.sexo);
+        println!("la ciudad es: {}", self.ciudad);
+        println!("El cumpleaños es: {}", self.cumpleaños);
+    }
+}
+
+fn main() {
+
+    let alumno = Persona {
+        nombre: String::from("Luis Eduardo Chan Portillo"),
+        edad: 18,
+        altura: 1.75,
+        sexo: String::from("Masculino"),
+        ciudad: String::from("Culiacán"),
+        cumpleaños: String::from("5 de noviembre"),
+    };
+
+    alumno.mostrar();
+}
